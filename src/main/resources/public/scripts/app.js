@@ -43,13 +43,3 @@ app.controller('CreateCtrl', function ($scope, $http, $location) {
         })
     }
 });
-
-    //$scope.todoStatusChanged = function (todo) {
-    //    console.log(todo);
-    //    $http.put('/api/v1/todos/' + todo.id, todo).success(function (data) {
-    //        console.log('status changed');
-    //    }).error(function (data, status) {
-    //        console.log('Error ' + data)
-    //    })
-    //}
-// });
