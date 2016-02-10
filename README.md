@@ -109,4 +109,6 @@ i la nova persona s'afegirà a la llista ..
 
 ![resultat](images/web2.png)
 
+Tot el codi Angular està en el fitxer app.js (/src/main/resources/public/scripts/)
+
 O sigui només una prova per veure si podia usar Angular des d'Spark fent servir Groovy. Es pot :-)
