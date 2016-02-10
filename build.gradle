@@ -1,0 +1,22 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()   
+}
+
+// avoid groovy/jade asm clashes
+configurations {
+    all*.exclude group: 'asm'
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.3'
+    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+    compile 'org.hsqldb:hsqldb:2.3.1'
+    testCompile 'junit:junit:4.11'
+}
+
+task runScript (dependsOn: 'classes', type: JavaExec) {
+    main = 'server'
+    classpath = sourceSets.main.runtimeClasspath
+}

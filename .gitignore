@@ -1,0 +1,9 @@
+.classpath
+.idea/
+.settings/
+.gradle/
+.project
+groovy-spark.iml
+build/
+bin/
+

@@ -1,0 +1,24 @@
+<h2>Persones <a href="#/create">Nova Persona</a></h2>
+
+<table>
+    <tr>
+        <th>
+            #
+        </th>
+        <th>
+            Nom
+        </th>
+        <th>
+            Cognom
+        </th>
+    </tr>
+    <tr class="success-{{persona.nom}}" ng-repeat="persona in persones">
+        <td>{{$index+1}}</td>
+        <td>
+            {{persona.nom}}
+        </td>
+        <td>
+            {{persona.cognom}}
+        </td>
+    </tr>
+</table>
