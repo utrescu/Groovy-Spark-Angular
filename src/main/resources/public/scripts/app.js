@@ -5,7 +5,8 @@ var app = angular.module('personesapp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ngMessages'
 ]);
 
 app.config(function ($routeProvider) {
